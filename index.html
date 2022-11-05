@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugar and Flour</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            background-color: rgb(181, 175, 12);
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px;
+            background: rgb(154, 154, 154);
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: rgb(154, 154, 154)
+            height: 300px;
+        }
+
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="./logo.png" alt="Logo_flour" style="float:left">
+        <h1>Flour and Sugar</h1>
+        <hr>
+        <p>Maravilloso sabor</p>
+        <hr>
+    </header>
+<hr>
+
+    <section>
+        <article>
+            <section>
+                <h2>Pasteles</h2>
+                <p>Elaborados con ingredientes de calidad.Atrévete a experimentar nuevos sabores
+                 o prueba los clasicos de la casa</p>
+            </section>
+    
+
+
+ <!--Menú de Panaderia-->   
+        <section>
+            <h2>Menú de Pasteles Clásicos</h2>
+            <ul>
+                <li>- Chocolate------------------------$250.00 MXN</li>
+                    <dd>Amargo o semidulce</dd>
+                <li>- Mil Hojas -----------------------$430.00 MXN</li>
+                    <dd>Con masa de hojaldre y azúcar refinada</dd>
+                <li>-Tres leches ----------------------$385.00 MXN</li>
+                    <dd>Leche entera, leche evaporada y leche condensada</dd>
+            <ul>
+
+        <h2>Menú de Pasteles Flour and Sugar</h2>
+            <ul>
+                <li>Pastel Red Velvet</li>
+                <li>Limón con menta</li>
+                <li>Nuez con mermelada de higo</li>
+                <li>Fresa-naranja</li>
+            </ul>  
+        </section>  
+
+    <hr>
+<!--Sucursales-->
+        <section>
+        <H2>Sucursales</H2>
+        <h3>Centro</h3>
+            <dd>De Lunes a Sábado, 10:00 AM = 9:00 PM</dd>
+            <dd>Domingo de 8:00 AM a 6:00 PM</dd>
+        <h3>Poniente</h3>
+            <dd>De Lunes a Sábado, 10:00 AM = 9:00 PM</dd>
+            <dd>Domingo de 8:00 AM a 6:00 PM</dd>
+        <h3>Sur</h3>
+            <dd>De Lunes a Sábado, 10:00 AM = 11:00 PM</dd>
+            <dd>Domingo CERRADO</dd>
+        </section>
+
+<hr>
+<!--Instrucciones de Pedido-->
+        <section>
+             <h2> Arma tu pastel</h2>
+             <p>¿Cómo lo hago?</p>
+             <ol>
+                <li>Selecciona tu pastel</li>
+                <li>Elige algún tipo de cubierta (Excepto Mil Hojas)</li>
+                <li>Selecciona alguna fruta</li>
+                <li>Selecciona la Sucursal</li>
+                <li>Llena tus datos del pedido</li>
+                <li>¡Listo!</li>
+             </ol>
+        </section>
+
+    <hr>
+    <!--Armado de pastel-->
+
+        <Section>
+            <h2>Selecciona tu pastel</h2>
+            <label for="Pastel">Elige tu pastel</label>
+            <select id="Pastel" name="Pastel">
+             <option value="Chocolate">Chocolate</option>
+             <option value="Mil Hojas">Mil Hojas</option>
+             <option value="Tres Leches">Tres Leches</option>
+             <option value="Red Velvet">Red Velvet</option>
+             <option value="Limón con Menta">Limón con Menta</option>
+             <option value="Nuez con Mermelada de higo">Nuez con Mermelada de higo</option>
+             <option value="Fresa-Naranja">Fresa-Naranja</option>
+            </select>
+   
+
+            <h2>Selecciona la cobertura de tu pastel</h2><br>
+                <input type="radio" id="Fondant" name="Cubierta" value="Fondat">
+                <label for="Fondant">Fondant</label><br>
+                <input type="radio" id="Butttercream" name="Cubierta" value="Butttercream">
+                <label for="Butttercream">Butttercream</label><br>
+                <input type="radio" id="Chantilly" name="Cubierta" value="Chantilly">
+                <label for="Chantilly">Chantilly</label><br>
+                <input type="radio" id="Merengue" name="Cubierta" value="Merengue">
+                <label for="Merengue">Merengue</label><br><br>
+
+          <h2>Selecciona el complemento del relleno</h2>
+          <label for="Pastel">Elige tu complemento</label>
+            <select id="complemento" name="complemento">
+                <option value="Fruta">Fruta</option>
+                <option value="Mermelada">Mermelada</option>
+                <option value="Nueces o Avellanas">Nueces o Avellanas</option>
+                <option value="Ganache">Ganache</option>
+                <option value="Crema inglesa">Crema inglesa</option>
+                <option value="Dulce de leche">Dulce de leche</option>
+            </select>
+
+         <h2>Complementos extra con costo</h2>
+            <input type="checkbox" id="topping1" name="Extra1" value="Figura">
+            <label for="Extra1">Figura -------------------- $90.00 MXN</label>
+            <label for="Extra1">No. Figuras</label>
+            <input type="number" id="Num1" name="Cantidad" maxlength="2"><br>
+
+            <input type="radio" id="Papel" name="Papel" value="Papel">
+            <label for="Papel">Papel arroz impreso - $45.00 MXN</label><br>
+
+            <input type="checkbox" id="topping3" name="Extra3" value="Piso">
+            <label for="Piso">Piso extra ------------- $125.00 MXN</label>
+            <label for="Num2">No. Pisos:</label>
+            <input type="number" id="Num2" name="Num2" maxlength="2"><br>
+
+            <input type="radio" id="Confit" name="Confit" value="Confit">
+            <label for="Confit">Confitura--------------- $100.00 MXN</label><br><br>
+
+            <h4>(Opcional sin costo)<br>Agrega mensaje o dedicatoria</h4>
+            <label for="Input1">Mensaje o dedicatoria</label>
+            <input type="text" id="Input1" name="Input1">
+            <br><br>
+            
+        <hr>
+    <!--Detalles de pedido-->
+        <Section>
+            <form>
+                <h2>Detalles de pedido</h2>
+                <label for="Name1">Nombre</label><br>
+                <input type="text" id="Name1" name="Name1" maxlength="35"><br>
+                <br>
+                <label for="tel1">Número de teléfono</label><br>
+                <input type="tel" id="tel1" name="tel1" maxlength="10">
+                <br>
+                <br>
+                <label for="Sucursal">Sucursal </label>
+                <select id="Sucursal" name="Sucursal">
+                    <option value="Centro">Centro</option>
+                    <option value="Poniente">Poniente</option>
+                    <option value="Sur">Sur</option><br><br>
+                </select>
+                <br>
+                <br>
+                <label for="mail">Email</label><br>
+                <input type="mail" id="mail" name="mail"><br>
+                <br>
+                <br>
+                <label for="Com">Comentario adicional</label><br>
+                <input type="text" id="Com" name="Com" maxlength="120"><br>
+                <br>
+                <br>
+                <button type="submit">Finalizar pedido</button>
+                <button type="reset">Reiniciar</button>
+            </form>
+        </Section>
+        </article>
+    </section>
+    <footer>
+        <p>®Derechos reservados</p><br>
+        <p>Sigue nuestras redes sociales </p>
+        <a href="https://www.facebook.com" target="_blank">
+            <img src="./fb.png" width="35px" height="35px">
+        </a>
+        <a href="https://www.ubstragran.com" target="_blank">
+            <img src="./inst.png" width="35px" height="35px">
+        </a>
+        
+    </footer>
+</body>
+</html>
